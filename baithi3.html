@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Câu 3: Viết hàm đếm số ký tự nguyên âm trong một chuỗi cho trước. 
+        Hàm có 1 tham số truyền vào mà một mảng các ký tự.
+         Hàm trả về false nếu không có ký tự nguyên âm nào. 
+Viết chương trình nhập vào một chuỗi bất kỳ. 
+Gọi hàm tìm số ký tự nguyên âm vừa xây dựng ở trên.
+Nguyên âm là các ký tự: a, o, e, u, i -->
+
+    <script>
+      let dem =0
+     function sna(arr){
+         for(let i=0;i<arr.length;i++){
+            let ch= arr.charAt(i)
+             if(ch=='a'||ch=='o'||ch=='e'||ch=='u'||ch=='i'){
+                 dem++;
+             }
+
+        }
+        if(dem==0){
+            return false
+        }
+         document.write('so nguyen am co trong chuoi vua nhap la ' +dem)
+
+     }
+     let chuoi = prompt('nhap vao chuoi bat ki')
+     let arr= chuoi.split('')
+     sna();
+    </script>
+</body>
+</html>

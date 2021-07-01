@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Câu 2: Xây dựng hàm trả về vị trí của phần tử cần tìm trong một mảng chotrước 
+    (Giả sử tất cả các phần tử trong mảng không giống nhau). 
+    Hàm có 2tham số: số phần tử cần tìm, mảng cho trước. 
+    Viết chương trình với một mảng số nguyên được khởi tạo trước. 
+    Nhập vào mộtgiá trị bất kỳ, sau đó kiểm tra xem giá trị 
+    số nguyên bất kỳ vừa nhập có nằmtrong mảng đã nhập hay không. -->
+    <script>
+        function demo(a, arr) {
+            let index = -1;
+            for (i = 0; i < arr.length; i++) {
+                index = i;
+            if (arr[i]==a) {
+                alert('co nam trong mang');
+                break;
+            } 
+        }
+            if(arr[i]!=a){
+                alert('khong nam trong mang')
+            }
+        }
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let a = 8;
+        demo(a, arr);
+
+    </script>
+</body>
+
+</html>
